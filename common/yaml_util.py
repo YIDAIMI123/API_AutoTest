@@ -43,9 +43,9 @@ class YamlUtil:
         open(path, "w", encoding="utf-8").close()
 
     @staticmethod
-    def extract(path):
+    def read_yaml_testcase(yaml_path):
         """适用于获取 token 等变量"""
-        with open(path, "r", encoding="utf-8") as f:
+        with open(yaml_path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
             return data
 

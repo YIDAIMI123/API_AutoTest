@@ -1,9 +1,12 @@
 request:
   method: POST
-  url: "http://shop-xo.hctestedu.com/api/region/index"
+  url: "http://shop-xo.hctestedu.com/api/user/login"
   params:
     application: web
     application_client_type: pc
     token: ""
   data:
-    pid: 0
+    accounts: qqqqqq
+    pwd: xxx***xxx
+    verify: rib5
+    type: username
