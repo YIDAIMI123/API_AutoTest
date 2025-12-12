@@ -10,7 +10,7 @@ def test_login(case_info):
     data = case_info["request"]["data"]
 
 
-    response = RequestsUtil.send_request(method=method,params=params,url=url,json=data)
+    response = RequestsUtil.send_request(method=method,params=params,url=url,data=data)
     assert response.status_code == 200
     json_r = response.json()
     assert json_r["code"] == 0
