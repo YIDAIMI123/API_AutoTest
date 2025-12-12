@@ -16,3 +16,8 @@ def test_login(case_info):
     assert json_r["code"] == 0
     assert json_r["msg"] == "登录成功"
     assert "data" in json_r
+
+    data = json_r["data"]
+    assert data["username"] == "qqqqqq"          # 登录账号
+    assert data["token"]                       # 不为空即可
+    assert data["user_name_view"] == "qqqqqq"
