@@ -17,9 +17,9 @@ def test_login(case_info):
     assert json_r["msg"] == "登录成功"
     assert "data" in json_r
 
-    data = json_r["data"]
+    # datas = json_r["data"]
     # assert data["username"] == "qqqqqq"          # 登录账号
    
     print("输出前")
-    print(data)
+    print(json_r["data"])
     print("输出后") 
