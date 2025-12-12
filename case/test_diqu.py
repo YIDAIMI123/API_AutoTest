@@ -1,5 +1,4 @@
 import pytest
-import requests
 from common.yaml_util import YamlUtil
 from common.requests_util import RequestsUtil
 
@@ -10,5 +9,10 @@ def test_login(case_info):
     params = case_info["request"]["params"]
     data = case_info["request"]["data"]
 
-    response = RequestsUtil.send_request(method=method, url=url, params=params, data=data)
-    assert response.json()["code"] == 200
+
+    response = RequestsUtil.send_request(method=method, url=url, json=data)
+    assert response.status_code == 200
+    json_r = response.json()
+    assert json_r["code"] == 0
+    assert json_r["msg"] == "登录成功"
+    assert "data" in json_r

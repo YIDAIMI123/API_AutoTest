@@ -2,8 +2,8 @@ import requests
 
 class RequestsUtil: #请求基类
     session = requests.session()
-
-    def send_request(self, **kwargs):
+    @staticmethod
+    def send_request(**kwargs):
         total_params = {
             "application": "web",
             "application_client_type": "pc",

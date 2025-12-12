@@ -40,8 +40,9 @@ class YamlUtil:
 
     @staticmethod
     def clean_yaml(path):
-        open(path, "w", encoding="utf-8").close()
-
+        with open(path, mode="w", encoding="utf-8") as f:
+            pass
+    
     @staticmethod
     def read_yaml_testcase(yaml_path):
         """适用于获取 token 等变量"""

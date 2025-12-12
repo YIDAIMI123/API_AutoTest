@@ -1,12 +1,12 @@
-request:
-  method: POST
-  url: "http://shop-xo.hctestedu.com/api/user/login"
-  params:
-    application: web
-    application_client_type: pc
-    token: ""
-  data:
-    accounts: qqqqqq
-    pwd: xxx***xxx
-    verify: rib5
-    type: username
+- request:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=/api/user/login"
+    params:
+      application: web
+      application_client_type: pc
+      token: ""
+    data:
+      accounts: qqqqqq
+      pwd: xxx***xxx
+      verify: rib5
+      type: username
