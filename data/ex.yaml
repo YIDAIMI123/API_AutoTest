@@ -1,0 +1,9 @@
+request:
+  method: POST
+  url: "http://shop-xo.hctestedu.com/api/region/index"
+  params:
+    application: web
+    application_client_type: pc
+    token: ""
+  data:
+    pid: 0
