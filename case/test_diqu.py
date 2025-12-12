@@ -11,7 +11,7 @@ def test_login(case_info):
 
 
     response = RequestsUtil.send_request(method=method,params=params,url=url,json=data)
-    assert response.status_code == 404
+    assert response.status_code == 200
     json_r = response.json()
     assert json_r["code"] == 0
     assert json_r["msg"] == "登录成功"
