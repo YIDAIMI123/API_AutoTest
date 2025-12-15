@@ -1,6 +1,6 @@
 - request:
     method: POST
-    url: "http://shop-xo.hctestedu.com/index.php?s=/api/user/login"
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/user/login"
     params:
       application: web
       application_client_type: pc
