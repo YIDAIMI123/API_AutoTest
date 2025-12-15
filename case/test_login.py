@@ -2,7 +2,7 @@ import pytest
 from common.yaml_util import YamlUtil
 from common.requests_util import RequestsUtil
 
-@pytest.mark.parametrize("case_info",YamlUtil.read_yaml_testcase("./data/ex.yaml"))
+@pytest.mark.parametrize("case_info",YamlUtil.read_yaml_testcase("./data/login.yaml"))
 def test_login(case_info):
     method = case_info["request"]["method"]
     url = case_info["request"]["url"]
