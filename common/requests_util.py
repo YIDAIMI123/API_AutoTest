@@ -1,9 +1,18 @@
 import requests
+from common.yaml_util import YamlUtil
 
 class RequestsUtil: #请求基类
     session = requests.session()
     @staticmethod
     def send_request(**kwargs):
+        # try:
+        #     token = YamlUtil.read_yaml("./data/token.yaml", "token")
+        #     if token:
+        #         params = kwargs.get("params", {})
+        #         params["token"] = token
+        #         kwargs["params"] = params
+        # except Exception:
+        #      pass
         total_params = {
             "application": "web",
             "application_client_type": "pc",

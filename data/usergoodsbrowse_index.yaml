@@ -1,0 +1,8 @@
+- request:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/usergoodsbrowse/index"
+    params:
+      application: web
+      application_client_type: pc
+    data:
+      page: 1

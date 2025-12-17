@@ -1,0 +1,16 @@
+- request:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/goods/spectype"
+    params:
+      application: web
+      application_client_type: pc
+    data:
+      id: 2
+      spec:
+        - type: "套餐"
+          value: "套餐二"
+        - type: "颜色"
+          value: "银色"
+        - type: "容量"
+          value: "64G"  
+      stock: 1

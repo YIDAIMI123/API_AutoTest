@@ -1,0 +1,7 @@
+- request:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/index/index"
+    params:
+      application: app
+      application_client_type: weixin
+    

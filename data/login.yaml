@@ -1,15 +1,13 @@
 - request:
     method: POST
-    url: "http://shop-xo.hctestedu.com/index.php?s=api/user/login"
+    url: http://shop-xo.hctestedu.com/index.php?s=api/user/login
     params:
-      application: web
-      application_client_type: pc
+      application: app
+      application_client_type: weixin
     data:
-      accounts: qqqqqq
-      pwd: xxx***xxx
+      accounts: admin
+      pwd: 123456
       type: username
-    headers:
-      Content-Type: "application/x-www-form-urlencoded"
-      X-Requested-With: "XMLHttpRequest"
+
 
 

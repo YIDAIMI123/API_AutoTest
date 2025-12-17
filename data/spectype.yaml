@@ -1,0 +1,13 @@
+- request:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/goods/spectype"
+    params:
+      application: web
+      application_client_type: pc
+      toekn: ""
+    data:
+      id: 2
+      spec:
+        - type: "套餐"
+          value: "套餐二"
+    

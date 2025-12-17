@@ -1,0 +1,8 @@
+- request_detail:
+    method: POST
+    url: "http://shop-xo.hctestedu.com/index.php?s=api/goods/detail"
+    params:
+      application: web
+      application_client_type: pc
+    data:
+      goods_id: 12
